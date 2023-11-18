@@ -4,26 +4,27 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class Department {
-    private String name;
+    private String departmentName;
     private int countOfEmployees;
+    private ArrayList<Employee> employees;
 
-    public ArrayList<Employee> employees = new ArrayList<Employee>();
-
-    public Department(String name){
-        this.name = name;
+    public Department(String departmentName){
+        this.departmentName = departmentName;
+        this.employees = new ArrayList<Employee>();
         this.countOfEmployees = 0;
     }
 
     public Department(ArrayList<Employee> employees){
+        this.employees = new ArrayList<Employee>();
         this.employees.addAll(employees);
     }
 
-    public String getName(){
-        return this.name;
+    public String getDepartmentName(){
+        return this.departmentName;
     }
 
-    public void setName(){
-        this.name = name;
+    public void setDepartmentName(){
+        this.departmentName = departmentName;
     }
 
     public int getCountOfEmployees(){
