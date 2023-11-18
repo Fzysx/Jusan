@@ -1,0 +1,11 @@
+# Игнорировать файлы .iml
+*.iml
+
+# Игнорировать директорию .idea
+.idea/
+
+# Игнорировать директорию out
+out/
+
+# Игнорировать файл test.java в директории src/organization
+src/organization/test.java
